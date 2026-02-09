@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-WEMSC670ZR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    // Google Analytics 4
+    gtag('config', 'G-WEMSC670ZR');
+    // Google Ads
+    gtag('config', 'AW-17840803263');
+  </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://bluegridmedia.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Services",
+      "item": "https://bluegridmedia.com/services.html"
+    }
+  ]
+}
+</script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Services | Blue Grid Media</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+  <style>
+    /* Existing FAQ card styles (kept) */
+    .faq-item {
+      background: #ffffff;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.04);
+      padding: 0 20px;
+      overflow: hidden;
+    }
+    .faq-item summary {
+      cursor: pointer;
+      padding: 20px 0;
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: #2d3e50;
+      list-style: none;
+      position: relative;
+    }
+    .faq-item summary::marker {
+      display: none;
+    }
+    .faq-item summary::after {
+      content: "▼";
+      position: absolute;
+      right: 0;
+      top: 20px;
+      font-size: 0.9rem;
+      color: #888;
+      transition: transform 0.2s ease;
+    }
+    .faq-item[open] summary::after {
+      content: "▲";
+      transform: rotate(180deg);
+    }
+    .faq-item p {
+      padding-bottom: 20px;
+      margin-top: 0;
+      color: #444;
+      line-height: 1.6;
+    }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9fbfc;
+      color: #2d3e50;
+    }
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    .logo-container {
+      margin-bottom: 40px;
+    }
+    .logo {
+      max-height: 200px;
+    }
+    .subtitle {
+      color: #cce4f6;
+      font-size: 1.6rem;
+      line-height: 1.4;
+    }
+    h1, h2 {
+      margin-bottom: 10px;
+    }
+    .services-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 30px 0;
+    }
+    .service-card {
+      background-color: white;
+      border-radius: 10px;
+      padding: 25px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+      transition: transform 0.2s;
+      flex: 1 1 250px;
+      max-width: 300px;
+      text-align: center;
+    }
+    .service-card:hover {
+      transform: translateY(-5px);
+    }
+    .material-icons-outlined {
+      font-size: 36px;
+      color: #23638f;
+      margin-bottom: 15px;
+    }
+    .service-card h3 {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+    .service-card p {
+      font-size: 0.95rem;
+      line-height: 1.5;
+      margin: 0;
+    }
+    /* CTA section */
+    .cta-section {
+      background: linear-gradient(to right, #13344d, #23638f);
+      text-align: center;
+      padding: 60px 20px;
+    }
+    .cta-section h2 {
+      color: #ffffff;
+      font-size: 2rem;
+      margin-bottom: 15px;
+    }
+    .cta-section p {
+      font-size: 1.15rem;
+      color: #cce4f6;
+      max-width: 700px;
+      margin: 0 auto 25px;
+    }
+    .cta-btn {
+      display: inline-block;
+      background-color: #2d3e50;
+      color: #fff;
+      padding: 12px 28px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.2s, transform 0.2s;
+    }
+    .cta-btn:hover {
+      background-color: #1b2c3a;
+      transform: translateY(-2px);
+    }
+    .footer-links {
+      margin-bottom: 20px;
+    }
+    .footer-links a:hover {
+      text-decoration: underline;
+    }
+    /* Insight box */
+    .insight-box {
+      max-width: 900px;
+      margin: 40px auto 0;
+      padding: 25px 30px;
+      background: #ffffff;
+      border-left: 5px solid #23638f;
+      border-radius: 10px;
+      box-shadow: 0 10px 28px rgba(0,0,0,0.06);
+    }
+    .insight-box p {
+      margin: 0;
+      font-size: 1.05rem;
+      line-height: 1.7;
+      color: #2d3e50;
+    }
+    /* FAQ Section Styling */
+    .faq-section {
+  background: linear-gradient(to right, #13344d, #23638f);
+  padding: 60px 20px;
+  margin-top: 0;
+}
+    .faq-section h2 {
+      color: #ffffff;
+      font-size: 2rem;
+      margin-bottom: 30px;
+    }
+    .faq-container {
+      margin-top: 30px;
+    }
+    /* Ensure the white FAQ cards stand out on the blue background */
+    .faq-container .faq-item {
+      background: #ffffff;
+    }
+    /* Responsive tweaks */
+    @media (max-width: 640px) {
+      .services-grid { gap: 15px; padding: 30px 0; }
+      .insight-box { margin: 30px 16px 0; padding: 20px; }
+      .cta-section { padding: 50px 16px; }
+      .cta-section p { font-size: 1rem; }
+      .service-card { max-width: 100%; }
+      .pricing-card { flex-direction: column; text-align: center; gap: 15px; }
+      .pricing-header { justify-content: center; }
+    }
+    /* === Remove gap between CTA and FAQ === */
+.cta-section {
+  padding-bottom: 30px !important;
+  margin-bottom: 0 !important;
+}
+.faq-section {
+  padding-top: 30px !important;
+  margin-top: 0 !important;
+}
+.faq-section h2 {
+  margin-top: 0 !important;
+}
+.cta-section,
+.faq-section {
+  display: block;
+}
+
+    /* Pricing card specific styles (horizontal layout) */
+    .pricing-card {
+      background: #f0f7ff;
+      border-radius: 10px;
+      padding: 30px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+      display: flex;
+      align-items: flex-start;
+      max-width: 800px;
+      margin: 0 auto;
+      gap: 30px;
+    }
+    .pricing-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 15px;
+    }
+    .pricing-card h3 {
+      margin: 0;
+      font-size: 1.5rem;
+    }
+    .pricing-info p {
+      margin: 5px 0;
+      font-size: 1.1rem;
+    }
+    .pricing-card strong {
+      color: #23638f;
+    }
+    .pricing-details {
+      font-size: 0.9rem;
+      opacity: 0.8;
+      margin-top: 10px;
+    }
+    .pricing-card .cta-btn {
+      background: #23638f;
+      margin-top: 10px;
+      align-self: flex-start;
+    }
+    .pricing-card .cta-btn:hover {
+      background: #13344d;
+    }
+
+    /* Section dividers */
+    .service-section {
+      margin-top: 30px;
+    }
+    .service-section h3 {
+      text-align: center;
+      font-size: 1.8rem;
+      margin-bottom: 25px;
+    }
+  </style>
+  <!-- FAQ Schema (updated with new pricing question) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Is my business eligible for Local Services Ads?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Local Services Ads are available to many service-based businesses, including legal, dental, home services, real estate, and financial professionals. Eligibility depends on your industry and region. We’ll help you verify your qualifications and get set up if you’re approved."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How much should I invest in Local Services Ads?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Most businesses start with $1,000–$1,500/month, but your budget can be tailored to your goals and market size. Since you’re only charged for verified leads, every dollar is focused on real customer opportunities."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What qualifies as a lead in this program?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A qualified lead is someone who contacts your business directly from your ad — whether by phone, message, or booking — and is located within your service area. Google filters out spam and irrelevant inquiries."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can you guarantee I’ll get leads?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "While no marketing channel can guarantee lead volume, we make sure your profile is optimized, verified, and positioned to show when real customers are searching. Most clients begin receiving leads shortly after going live."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I track performance and results?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We provide simple, visual reports showing how many leads you received, how much you spent, and how your campaign is trending. You’ll also have access to Google’s dashboard to review call recordings and dispute unqualified leads."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How long does Google LSA setup take?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Most accounts are verified and go live within 7–10 business days once documentation and background checks are complete. Timelines can vary slightly by industry and region."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you manage leads and disputes?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. We monitor lead quality, dispute invalid or irrelevant leads in Google's dashboard, and continuously optimize targeting and settings to protect your budget and improve ROI."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How much do you charge for LSA management?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "One-time setup fee: $300. Ongoing monthly management: $150. No long contracts required."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo-container">
+        <a href="/">
+          <img src="logo.png" alt="Blue Grid Media Logo" class="logo">
+        </a>
+      </div>
+      <h1>LSA Services</h1>
+      <p class="subtitle">
+        Digital strategies that deliver qualified leads and measurable growth.<br>
+        Specializing in Google Local Services Ads for local home service providers like plumbers, HVAC technicians, and contractors.
+      </p>
+    </div>
+  </header>
+  <!-- Insight box (refined) -->
+  <section class="container">
+    <div class="insight-box">
+      <p>
+        Many local businesses gain visibility but struggle with quality leads. LSAs can lead to irrelevant calls and budget waste if not managed properly. We prioritize lead quality to ensure every contact counts.
+      </p>
+    </div>
+  </section>
+  <!-- Services -->
+  <section class="container">
+    <h2 style="text-align: center; font-size: 2rem; margin-top: 60px;">What We Offer</h2>
+    <!-- One-Time LSA Setup Section -->
+    <div class="service-section">
+      <h3>One-Time LSA Setup</h3>
+      <div class="services-grid">
+        <div class="service-card">
+          <span class="material-icons-outlined">verified_user</span>
+          <h3>Verification</h3>
+          <p>We manage the complete verification process to get your LSA account live swiftly and smoothly.</p>
+        </div>
+        <div class="service-card">
+          <span class="material-icons-outlined">person_add</span>
+          <h3>Profile Creation</h3>
+          <p>Build a compelling, optimized profile designed to attract high-intent local customers.</p>
+        </div>
+        <div class="service-card">
+          <span class="material-icons-outlined">gavel</span>
+          <h3>Compliance Checks</h3>
+          <p>Handle all required documentation for licenses, insurance, and background checks to meet Google's standards.</p>
+        </div>
+        <div class="service-card">
+          <span class="material-icons-outlined">tune</span>
+          <h3>Initial Optimization</h3>
+          <p>Configure targeting, services, and budgeting for immediate high-quality lead generation.</p>
+        </div>
+      </div>
+    </div>
+    <!-- Ongoing LSA Management Section -->
+    <div class="service-section">
+      <h3>Ongoing LSA Management</h3>
+      <div class="services-grid">
+        <div class="service-card">
+          <span class="material-icons-outlined">insights</span>
+          <h3>Lead Tracking & Reporting</h3>
+          <p>Get actionable insights with custom dashboards tracking sources, costs, conversions, and trends for informed decisions.</p>
+        </div>
+        <div class="service-card">
+          <span class="material-icons-outlined">verified</span>
+          <h3>Compliance & Profile Maintenance</h3>
+          <p>Maintain compliance with ongoing guidance on documentation and profile adjustments for uninterrupted service.</p>
+        </div>
+        <div class="service-card">
+          <span class="material-icons-outlined">support_agent</span>
+          <h3>One-on-One Strategy Support</h3>
+          <p>Receive personalized expert advice, rapid tweaks, and strategies tailored to your business objectives.</p>
+        </div>
+        <div class="service-card">
+          <span class="material-icons-outlined">business</span>
+          <h3>Google Business Profile Optimization</h3>
+          <p>Enhance local visibility by refining your profile with accurate details, photos, and updates to boost organic traffic.</p>
+        </div>
+        <div class="service-card">
+          <span class="material-icons-outlined">tune</span>
+          <h3>Account Optimization</h3>
+          <p>Fully optimize your LSA account with targeted service areas, specific services, and weekly budget adjustments.</p>
+        </div>
+        <div class="service-card">
+          <span class="material-icons-outlined">search</span>
+          <h3>Lead Monitoring & Disputing</h3>
+          <p>Continuous monitoring, lead vetting, and disputing invalid leads to protect your budget.</p>
+        </div>
+        <div class="service-card">
+          <span class="material-icons-outlined">add_photo_alternate</span>
+          <h3>Profile Updates</h3>
+          <p>Update your LSA profile with provided photos to keep it fresh and appealing.</p>
+        </div>
+        <div class="service-card">
+          <span class="material-icons-outlined">assessment</span>
+          <h3>Weekly Reporting</h3>
+          <p>Receive detailed weekly reports on performance to track progress and refine strategies.</p>
+        </div>
+        <div class="service-card">
+          <span class="material-icons-outlined">update</span>
+          <h3>Verification Maintenance</h3>
+          <p>Keep background checks and verification documents current for ongoing compliance.</p>
+        </div>
+        <div class="service-card">
+          <span class="material-icons-outlined">visibility</span>
+          <h3>Ad Positioning Monitoring</h3>
+          <p>Monitor ad placement to ensure your business stays visible to potential customers.</p>
+        </div>
+      </div>
+    </div>
+    <!-- Pricing Section -->
+    <div class="service-section">
+      <h3>Pricing</h3>
+      <div class="pricing-card">
+        <div class="pricing-header">
+          <span class="material-icons-outlined">attach_money</span>
+          <h3>Affordable Pricing</h3>
+        </div>
+        <div class="pricing-info">
+          <p><strong>$300</strong> one-time setup fee</p>
+          <p><strong>$150/month</strong> for ongoing management</p>
+          <p class="pricing-details">No long contracts • Cancel anytime • Transparent and value-driven</p>
+        </div>
+        <a href="free-lsa-consultation.html" class="cta-btn">Start With My Free Consultation</a>
+      </div>
+    </div>
+  </section>
+  <!-- CTA -->
+  <section class="cta-section">
+    <h2>Ready to Boost Your Local Leads?</h2>
+    <p>Discover how our tailored LSA strategies can drive qualified traffic and growth for your business.</p>
+    <a href="free-lsa-consultation.html" class="cta-btn">Schedule a Free Consultation</a>
+  </section>
+  <!-- FAQ -->
+  <div class="faq-section">
+    <h2 style="text-align: center; font-size: 2rem; margin-bottom: 30px;">FAQs About Local Services Ads</h2>
+    <div class="faq-container" style="max-width: 900px; margin: 0 auto;">
+      <details class="faq-item">
+        <summary>Is my business eligible for Local Services Ads?</summary>
+        <p>LSAs are ideal for service-based businesses like plumbing, HVAC, roofing, and more. Eligibility varies by industry and location—we'll check and guide you through setup.</p>
+      </details>
+      <details class="faq-item">
+        <summary>How much should I budget for Local Services Ads?</summary>
+        <p>Start with $1,000–$1,500/month, customized to your market and goals. Pay only for verified leads to maximize efficiency.</p>
+      </details>
+      <details class="faq-item">
+        <summary>What counts as a qualified lead?</summary>
+        <p>A direct contact from your ad—call, message, or booking—from someone in your service area. Google handles spam filtering.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Can you guarantee leads?</summary>
+        <p>No guarantees in marketing, but our optimization ensures you're visible to searching customers, with most clients seeing leads soon after launch.</p>
+      </details>
+      <details class="faq-item">
+        <summary>How do I track results?</summary>
+        <p>Access clear reports on leads, spend, and trends, plus Google's dashboard for call reviews and disputes.</p>
+      </details>
+      <details class="faq-item">
+        <summary>How long does LSA setup take?</summary>
+        <p>Typically 7–10 business days after submitting documents, varying by industry and region.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Do you handle leads and disputes?</summary>
+        <p>Yes, we monitor quality, dispute invalids, and optimize to safeguard your budget and boost ROI.</p>
+      </details>
+      <details class="faq-item">
+        <summary>How much do you charge for LSA management?</summary>
+        <p>$300 one-time setup; $150/month ongoing. Flexible terms with no long commitments.</p>
+      </details>
+    </div>
+  </div>
+  <!-- FOOTER (unchanged) -->
+  <div id="footer-placeholder"></div>
+  <script>
+    fetch("footer.html")
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("footer-placeholder").innerHTML = data;
+      });
+  </script>
+</body>
+</html>

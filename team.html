@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WEMSC670ZR"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  // Google Analytics 4
+  gtag('config', 'G-WEMSC670ZR');
+
+  // Google Ads
+  gtag('config', 'AW-17840803263');
+</script>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Our Team – Blue Grid Media</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header style="padding: 35px 0;">
+  <div class="container" style="text-align:center;">
+    <div class="logo-container" style="margin-bottom: 20px;">
+      <a href="index.html">
+        <img src="logo.png" alt="Blue Grid Media" class="logo">
+      </a>
+    </div>
+    <h1>Our Team</h1>
+    <p>The people behind Blue Grid Media</p>
+  </div>
+</header>
+
+<section class="about-section" style="padding: 40px 0;">
+  <div class="container">
+    <div style="max-width: 1000px; margin: 0 auto;">
+
+      <!-- INTRO -->
+      <div style="text-align:center; margin-bottom:50px;">
+        <p style="max-width:700px; margin:0 auto;">
+          Blue Grid Media is a small, focused team built to help local service businesses
+          generate real leads through clear strategy, hands-on execution, and honest reporting.
+          No layers. No outsourcing. No fluff.
+        </p>
+      </div>
+
+      <!-- TEAM GRID -->
+      <div style="
+        display:grid;
+        grid-template-columns:repeat(auto-fit, minmax(260px, 1fr));
+        gap:40px;
+      ">
+
+        <!-- TEAM MEMBER 1 -->
+<div class="team-card">
+
+          <img
+            src="BGMME.png"
+            alt="Julian Diep – Founder & CEO"
+            style="
+              width:100%;
+              max-width:220px;
+              border-radius:16px;
+              margin-bottom:20px;
+              box-shadow:0 10px 30px rgba(0,0,0,0.08);
+            "
+          >
+          <h3 style="margin-bottom:5px;">Julian Diep</h3>
+          <p style="font-weight:500; margin-top:0;">Founder & Lead Strategist</p>
+          <p style="font-size:0.95rem;">
+            Oversees strategy and directly manages Google Ads and Local Services Ads
+  campaigns with a focus on lead quality, intent, and efficiency. Handles
+  onboarding and client communication to ensure every account starts with
+  clear goals, clean structure, and full transparency.
+          </p>
+        </div>
+
+    
+     <!-- TEAM MEMBER 2 -->
+<div class="team-card">
+
+          <img
+            src="marina.JFIF"
+            alt="Marina Diaz – Co-Founder & CTO"
+            style="
+              width:100%;
+              max-width:220px;
+              border-radius:16px;
+              margin-bottom:20px;
+              box-shadow:0 10px 30px rgba(0,0,0,0.08);
+            "
+          >
+          <h3 style="margin-bottom:5px;">Marina Diaz</h3>
+          <p style="font-weight:500; margin-top:0;">Co-Founder & Technical Lead</p>
+          <p style="font-size:0.95rem;">
+            Leads technical implementation, tracking, analytics, and conversion
+            infrastructure to ensure clean data and reliable performance insights.
+          </p>
+        </div>
+
+        <!-- TEAM MEMBER 3 -->
+   <div class="team-card">
+          <img
+            src="Josue.jpeg"
+            alt="Josue Hernandez – Operations Manager"
+            style="
+              width:100%;
+              max-width:220px;
+              border-radius:16px;
+              margin-bottom:20px;
+              box-shadow:0 10px 30px rgba(0,0,0,0.08);
+            "
+          >
+          <h3 style="margin-bottom:5px;">Josue Hernandez</h3>
+          <p style="font-weight:500; margin-top:0;">Paid Social Specialist</p>
+          <p style="font-size:0.95rem;">
+            Specializes in Meta and Instagram Ads strategy, campaign execution,
+  and creative performance optimization to drive qualified leads and
+  scalable results across paid social.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- CTA -->
+      <div style="text-align:center; margin-top:60px;">
+        <a href="contact.html" class="btn-primary large">
+          Talk to Our Team
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- FOOTER -->
+<div id="footer-placeholder"></div>
+<script>
+  fetch("footer.html")
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById("footer-placeholder").innerHTML = data;
+    });
+</script>
+
+</body>
+</html>
