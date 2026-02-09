@@ -1,15 +1,1 @@
-/about.html /about 301
-/services.html /services 301
-/contact.html /contact 301
-/team.html /team 301
-/founder.html /founder 301
-/resources.html /resources 301
-/case-studies.html /case-studies 301
-/free-lsa-consultation.html /free-lsa-consultation 301
-/free-lsa-audit.html /free-lsa-audit 301
-/lsa-no-calls-guide.html /lsa-no-calls-guide 301
-/google-ads-vs-lsa-plumbers.html /google-ads-vs-lsa-plumbers 301
-/plumbing-ads-playbook-google-local-services-ads-vs-google-ads-2026-guide.html /plumbing-ads-playbook-google-local-services-ads-vs-google-ads-2026-guide 301
-/privacy.html /privacy 301
-/terms.html /terms 301
-/disclaimer.html /disclaimer 301
+/*.html  /:splat  301!
